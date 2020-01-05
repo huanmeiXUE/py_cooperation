@@ -12,7 +12,6 @@
 - 跳转至“/”网址，"/hurun"是第二个跳转；
 - import了cufflinks、pandas、plotly、pyecharts等去使数据网页显示完整。
 - 数据文档csv文档共5个，图片导入7张。
-- 待写
 ### 技术文档书写
 - HTML档描述：analyse.html是实现数据文字。result2.html文件是基础文件
 - Python档描述：①app.py(实现网页)，getpicture.py（用来获取图片数据文档）；②为了保证正常运行添加了多种模块。③设置了两个路径
