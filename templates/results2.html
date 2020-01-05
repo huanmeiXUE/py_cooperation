@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>重庆市房地产宏观环境研究分析</title>
+    <link rel="stylesheet" href="/static/layui-v2.5.5/layui/css/layui.css"  media="all">
+</head>
+<body>
+<div style="margin-left:50px;margin-top: 50px;margin-bottom: 50px;">
+    <form method="POST" action="/hurun"  class="layui-form">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <select name="the_region_selected" id="the_region_selected" lay-verify="required" lay-filter="select">
+                    <option value=""></option>
+                </select>
+            </div>
+        </div>
+    <input value='Do it!' type='SUBMIT' class="layui-btn">
+    </form>
+</div>
+<div style="width:100%">
+    <div style="width:900px;margin:auto">
+        {{ the_plot_all|safe }}
+    </div>
+</div>
+    
+{{ the_describe|safe }}
+
+<script src="/static/layui-v2.5.5/layui/layui.js"></script>
+<script>
+    layui.use(['form', 'upload', 'layer'], function () {
+
+     var form = layui.form,$ = layui.$;
+
+     $.ajax({
+         url: '/getSelect',
+         dataType: 'json',
+         type: 'get',
+         success: function (data) {
+             $.each(data, function (index, item) {
+                 $('#the_region_selected').append(new Option(item,index));// 下拉菜单里添加元素
+             });
+             layui.form.render("select");
+         }
+     })
+
+    //检查项目添加到下拉框中
+
+ })
+</script>
+
+</body>
+</html>
