@@ -1,17 +1,10 @@
-# 个人能力策展
-## 个人介绍
-- 姓名：薛焕媚
-- 学号：181013005
-- 班级：18网络与新媒体2班
-- 性格：随和、学习上进，有责任心，爱学，会尽力努力去解决问题。
-## 个人能力展示
-1. 购物车代码
-2. 字母选择器
-3. 颜色选择器及css样式改变。
-4. flask知识基本运用与理解。
-5. mysql数据库与pycharm的连接
-## 期末项目展望
-- 希望能够数据成功传输
-- 与合作伙伴尽可能互帮互助
-## 联系方式
-- 微信/QQ：978011714
+### 我的项目代码Github地址:
+[https://github.com/huanmeiXUE/py_cooperation](https://github.com/huanmeiXUE/py_cooperation)
+### Pythonanywhere部署网址：
+[ http://huanmeixue.pythonanywhere.com/] （http://huanmeixue.pythonanywhere.com/）
+### 数据传递描述：
+### 技术文档书写
+- HTML档描述：
+- Python档描述：
+- Web App动作描述：
+### 数据交互（数据结构）：
